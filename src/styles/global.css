@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores de Vivero Koru */
+  --color-koru-dark: #476A30;
+  --color-koru-light: #8DB359;
+  --color-koru-bg: #FAFBFA;
+  --color-koru-text: #1A1A1A;
+
+  /* Tipografías */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}

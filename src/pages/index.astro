@@ -1,11 +1,43 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Inicio">
+	<section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-koru-dark/5">
+		<div class="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
+		
+		<div class="z-10 text-center px-4 max-w-3xl">
+			<span class="uppercase tracking-[0.3em] text-koru-dark text-sm font-semibold mb-4 block">• Vivero •</span>
+			<h1 class="font-serif text-6xl md:text-8xl text-koru-text mb-6">KORU</h1>
+			<p class="font-serif italic text-2xl md:text-3xl text-koru-dark mb-10">Enverdece tu vida</p>
+			
+			<p class="text-lg mb-10 text-gray-600 font-light leading-relaxed">
+				Especialistas en suculentas, helechos y cactus. Cultivamos vida para transformar tus espacios en refugios naturales llenos de paz y armonía.
+			</p>
+			
+			<a href="/productos" class="inline-block bg-koru-dark text-white px-10 py-4 rounded-full tracking-wide hover:bg-koru-light transition-all duration-300 shadow-lg hover:shadow-xl">
+				Ver Catálogo
+			</a>
+		</div>
+	</section>
+
+	<section class="max-w-6xl mx-auto px-4 py-24">
+		<div class="grid md:grid-cols-3 gap-12 text-center">
+			<div class="p-6">
+				<div class="h-16 w-16 bg-koru-light/10 rounded-full flex items-center justify-center mx-auto mb-6 text-koru-dark">🌱</div>
+				<h3 class="font-serif text-xl mb-3">Helechos</h3>
+				<p class="text-gray-600 font-light">Frescura y follaje exuberante perfecto para interiores iluminados.</p>
+			</div>
+			<div class="p-6">
+				<div class="h-16 w-16 bg-koru-light/10 rounded-full flex items-center justify-center mx-auto mb-6 text-koru-dark">🌵</div>
+				<h3 class="font-serif text-xl mb-3">Cactus</h3>
+				<p class="text-gray-600 font-light">Resistentes, esculturales y de bajo mantenimiento. Ideales para decorar.</p>
+			</div>
+			<div class="p-6">
+				<div class="h-16 w-16 bg-koru-light/10 rounded-full flex items-center justify-center mx-auto mb-6 text-koru-dark">🪴</div>
+				<h3 class="font-serif text-xl mb-3">Suculentas</h3>
+				<p class="text-gray-600 font-light">Pequeñas joyas de la naturaleza, perfectas para coleccionar.</p>
+			</div>
+		</div>
+	</section>
 </Layout>
