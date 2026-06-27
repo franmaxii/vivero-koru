@@ -3,41 +3,92 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Inicio">
-	<section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-koru-dark/5">
-		<div class="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
-		
-		<div class="z-10 text-center px-4 max-w-3xl">
-			<span class="uppercase tracking-[0.3em] text-koru-dark text-sm font-semibold mb-4 block">• Vivero •</span>
-			<h1 class="font-serif text-6xl md:text-8xl text-koru-text mb-6">KORU</h1>
-			<p class="font-serif italic text-2xl md:text-3xl text-koru-dark mb-10">Enverdece tu vida</p>
-			
-			<p class="text-lg mb-10 text-gray-600 font-light leading-relaxed">
-				Especialistas en suculentas, helechos y cactus. Cultivamos vida para transformar tus espacios en refugios naturales llenos de paz y armonía.
-			</p>
-			
-			<a href="/productos" class="inline-block bg-koru-dark text-white px-10 py-4 rounded-full tracking-wide hover:bg-koru-light transition-all duration-300 shadow-lg hover:shadow-xl">
-				Ver Catálogo
-			</a>
-		</div>
-	</section>
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-koru-dark/5">
+        <div class="absolute inset-0 z-0 opacity-40 bg-[url('/img/koru.jpg')] bg-cover bg-center"></div>
+        
+        <div class="z-10 text-center px-6 py-10 max-w-3xl bg-white/40 backdrop-blur-sm rounded-3xl shadow-sm border border-white/50">
+            <span class="uppercase tracking-[0.3em] text-koru-dark text-sm font-bold mb-4 block">• Vivero Botánico •</span>
+            <h1 class="font-serif text-6xl md:text-8xl text-koru-text mb-4 drop-shadow-sm">KORU</h1>
+            <p class="font-serif italic text-2xl md:text-3xl text-koru-dark mb-8">Enverdece tu vida en la ciudad</p>
+            
+            <p class="text-lg mb-10 text-gray-800 font-medium leading-relaxed max-w-2xl mx-auto">
+                Especialistas en suculentas, helechos y plantas de interior. Cultivamos vida aclimatada para transformar tus espacios en Córdoba Capital en verdaderos refugios naturales.
+            </p>
+            
+            <a href="/productos" class="inline-block bg-koru-dark text-white px-10 py-4 rounded-full tracking-wide font-medium hover:bg-koru-light transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95">
+                Explorar Catálogo
+            </a>
+        </div>
+    </section>
 
-	<section class="max-w-6xl mx-auto px-4 py-24">
-		<div class="grid md:grid-cols-3 gap-12 text-center">
-			<div class="p-6">
-				<div class="h-16 w-16 bg-koru-light/10 rounded-full flex items-center justify-center mx-auto mb-6 text-koru-dark">🌱</div>
-				<h3 class="font-serif text-xl mb-3">Helechos</h3>
-				<p class="text-gray-600 font-light">Frescura y follaje exuberante perfecto para interiores iluminados.</p>
-			</div>
-			<div class="p-6">
-				<div class="h-16 w-16 bg-koru-light/10 rounded-full flex items-center justify-center mx-auto mb-6 text-koru-dark">🌵</div>
-				<h3 class="font-serif text-xl mb-3">Cactus</h3>
-				<p class="text-gray-600 font-light">Resistentes, esculturales y de bajo mantenimiento. Ideales para decorar.</p>
-			</div>
-			<div class="p-6">
-				<div class="h-16 w-16 bg-koru-light/10 rounded-full flex items-center justify-center mx-auto mb-6 text-koru-dark">🪴</div>
-				<h3 class="font-serif text-xl mb-3">Suculentas</h3>
-				<p class="text-gray-600 font-light">Pequeñas joyas de la naturaleza, perfectas para coleccionar.</p>
-			</div>
-		</div>
-	</section>
+    <!-- Categorías -->
+    <section class="max-w-6xl mx-auto px-4 py-20 border-b border-gray-100">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl md:text-4xl text-koru-dark mb-4">Nuestra Especialidad</h2>
+            <p class="text-gray-500">Seleccionamos las mejores variedades para tu hogar.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div class="p-8 rounded-2xl hover:bg-koru-bg transition-colors duration-300 group">
+                <div class="h-20 w-20 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6 text-3xl group-hover:scale-110 transition-transform">🌱</div>
+                <h3 class="font-serif text-2xl mb-3 text-koru-text">Helechos</h3>
+                <p class="text-gray-600 font-light leading-relaxed">Frescura y follaje exuberante. Perfectos para darle un toque selvático a tus interiores iluminados y galerías.</p>
+            </div>
+            <div class="p-8 rounded-2xl hover:bg-koru-bg transition-colors duration-300 group">
+                <div class="h-20 w-20 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6 text-3xl group-hover:scale-110 transition-transform">🌵</div>
+                <h3 class="font-serif text-2xl mb-3 text-koru-text">Cactus</h3>
+                <p class="text-gray-600 font-light leading-relaxed">Resistentes al sol cordobés, esculturales y de muy bajo mantenimiento. Ideales para balcones y ventanas.</p>
+            </div>
+            <div class="p-8 rounded-2xl hover:bg-koru-bg transition-colors duration-300 group">
+                <div class="h-20 w-20 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6 text-3xl group-hover:scale-110 transition-transform">🪴</div>
+                <h3 class="font-serif text-2xl mb-3 text-koru-text">Suculentas</h3>
+                <p class="text-gray-600 font-light leading-relaxed">Pequeñas joyas de la naturaleza. Fáciles de cuidar, hermosas para coleccionar o para hacer regalos especiales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor (Local Córdoba) -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-koru-light font-bold uppercase tracking-wider text-sm mb-2 block">Crecemos con vos</span>
+                    <h2 class="font-serif text-4xl text-koru-dark mb-6">Plantas pensadas para nuestro clima</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Sabemos que el clima de Córdoba puede ser un desafío: veranos intensos y temporadas secas. Por eso, en Koru no solo vendemos plantas, sino que las <strong class="text-koru-text">aclimatamos previamente</strong> para que lleguen fuertes y sanas a tu departamento o casa.
+                    </p>
+                    <ul class="space-y-4 mb-8 text-gray-700">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-koru-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Asesoramiento personalizado post-venta.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-koru-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Sustratos preparados específicamente para cada especie.
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-koru-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Envíos a domicilio en barrios de Capital.
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Aquí podrías poner fotos de detalle más adelante. Por ahora usamos bloques de color sutiles con iconos -->
+                    <div class="bg-koru-light/20 aspect-square rounded-2xl flex items-center justify-center text-5xl transform translate-y-8">🌿</div>
+                    <div class="bg-koru-dark/10 aspect-square rounded-2xl flex items-center justify-center text-5xl">🛵</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Final CTA -->
+    <section class="max-w-4xl mx-auto px-4 py-24 text-center">
+        <h2 class="font-serif text-3xl md:text-5xl text-koru-text mb-6">¿Buscás darle vida a un rincón especial?</h2>
+        <p class="text-gray-500 mb-10 text-lg">Descubrí todas las opciones que tenemos disponibles esta temporada.</p>
+        <a href="/productos" class="inline-flex items-center gap-2 bg-white border-2 border-koru-dark text-koru-dark px-8 py-3 rounded-full font-semibold hover:bg-koru-dark hover:text-white transition-colors">
+            Ver plantas disponibles
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+        </a>
+    </section>
 </Layout>
